@@ -33,6 +33,21 @@
   }
 }
 
+@keyframes chipsee-logo-spin {
+  from {
+    transform: rotate(-30deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(3) .logo {
+    animation: chipsee-logo-spin infinite 1s alternate;
+  }
+}
+
 .card {
   padding: 2em;
 }
